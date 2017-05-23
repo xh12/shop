@@ -61,8 +61,18 @@
 		height:60px;
 		margin-right:10px;
 	}
+	.foot #img{
+		float:left;
+		width:80px;
+		height:60px;
+		margin-right:10px;
+	}
+	.foot #img img{
+		width:80px;
+		height:60px;
+		margin-right:20px;
+	}
 	#box1 #img img{
-
 		width:80px;
 		height:60px;
 		margin-right:20px;
@@ -122,12 +132,14 @@
 	}
 	li{float:left;text-align: center;}
 	.jiequan{
+		position:relative;
 		line-height:40px;
 		width:665px;
 		margin-top:10px;
 		height:40px;
 		border:1px solid #999;
 		background:#e4e4e4;
+		z-index: 10;
 	}
 	.jiequan .xuanz{
 		line-height:40px;
@@ -155,6 +167,24 @@
 	.hez{
 		float: right
 	}
+	.foot{
+		position:absolute;
+		bottom:40px;
+		left:0px;
+		padding:10px;
+		background: #fff;
+		width:644px;
+		height:60px;
+		border:1px solid red;
+	}
+.foot span{
+	position:relative;
+	top:-86px;
+	left:30px;
+	background:#ccc;
+	font-size:12px;
+
+}
 </style>
 <body>
 	<div class="box">
@@ -173,49 +203,52 @@
 				<div id="wenz">ml让文字在图片上显示的集中方式:第一种方</div>
 			</div></li>
 			<li class="danj">1899.55</li>
-			<li class="shul"><div class="shujia"><span>-</span><input type="text"><span>+</span></div></li>
+			<li class="shul"><div class="shujia"><span>-</span><input type="text" value="1"><span>+</span></div></li>
 			<li class="danj clor">1899.55</li>
 			<li class="caozu">删除</li>
 		</ul>
 		<ul class="shop">
 			<li class="xuanz"><input type="checkbox"></li>
 			<li class="jies">	<div id="box1">
-				<div id="img"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495277154566&di=622834bc5a263b31004979c360368f62&imgtype=0&src=http%3A%2F%2Fimg000.hc360.cn%2Fm6%2FM04%2F68%2FAA%2FwKhQoVV1MhKEbzwPAAAAAOKsReU561.jpg" alt=""></div>
+				<div id="img"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1496152249&di=5b0c5e703e312bd1b39c3ddc49516b2c&imgtype=jpg&er=1&src=http%3A%2F%2Fwww.5299shop.com%2FUploadFiles%2F2010082816282259329.jpg" alt=""></div>
 				<div id="wenz">ml让文字在图片上显示的集中方式:第一种方</div>
 			</div></li>
 			<li class="danj">2563.12</li>
-			<li class="shul"><div class="shujia"><span>-</span><input type="text"><span>+</span></div></li>
+			<li class="shul"><div class="shujia"><span>-</span><input type="text" value="1"><span>+</span></div></li>
 			<li class="danj clor">2563.12</li>
 			<li class="caozu">删除</li>
 		</ul>
 		<ul class="shop">
 			<li class="xuanz"><input type="checkbox"></li>
 			<li class="jies">	<div id="box1">
-				<div id="img"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495277154566&di=622834bc5a263b31004979c360368f62&imgtype=0&src=http%3A%2F%2Fimg000.hc360.cn%2Fm6%2FM04%2F68%2FAA%2FwKhQoVV1MhKEbzwPAAAAAOKsReU561.jpg" alt=""></div>
+				<div id="img"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495557545134&di=96c1c3dafd763bb9811c86ee481d3712&imgtype=0&src=http%3A%2F%2Fpic1.cxtuku.com%2F00%2F07%2F20%2Fb418c9a1a8ae.jpg" alt=""></div>
 				<div id="wenz">ml让文字在图片上显示的集中方式:第一种方</div>
 			</div></li>
 			<li class="danj">235.55</li>
-			<li class="shul"><div class="shujia"><span>-</span><input type="text"><span>+</span></div></li>
+			<li class="shul"><div class="shujia"><span >-</span><input type="text" value="1"><span>+</span></div></li>
 			<li class="danj clor">235.55</li>
 			<li class="caozu">删除</li>
 		</ul>
 		<ul class="shop">
 			<li class="xuanz"><input type="checkbox"></li>
 			<li class="jies">	<div id="box1">
-				<div id="img"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495277154566&di=622834bc5a263b31004979c360368f62&imgtype=0&src=http%3A%2F%2Fimg000.hc360.cn%2Fm6%2FM04%2F68%2FAA%2FwKhQoVV1MhKEbzwPAAAAAOKsReU561.jpg" alt=""></div>
+				<div id="img"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1495557545134&di=a1627826b9ad597291cd3c8341f78b3e&imgtype=0&src=http%3A%2F%2Fwww.it365.net%2Fimgit%2FP4ebdeb918dc59.gif" alt=""></div>
 				<div id="wenz">ml让文字在图片上显示的集中方式:第一种方</div>
 			</div></li>
 			<li class="danj">23.56</li>
-			<li class="shul"><div class="shujia"><span>-</span><input type="text"><span>+</span></div></li>
+			<li class="shul"><div class="shujia"><span>-</span><input type="text" value="1"><span>+</span></div></li>
 			<li class="danj clor">23.56</li>
 			<li class="caozu">删除</li>
 		</ul>
+
 		<ul class="jiequan">
 			<li class="xuanz xuanz-all"><input type="checkbox">全选</li>
 			<li class="shan">删除</li>
 			<ul class="hez">
-			<li class="">已选商品<span class="clor">12</span>&nbsp;<i class="yiangc">︽</i></li>
-				<li class="heji">合计：￥<span class="clor">000.00</span></li>
+			<li class="yixs">已选商品<span class="shul_color clor">0</span>&nbsp;<i class="yiangc">︽</i></li>
+			<ul class="foot " style="display:none">
+		</ul>
+				<li class="heji">合计：￥<span class="dan_clor clor">000.00</span></li>
 				<li class="jiesuan">删除</li></ul>
 		</ul>
 	</div>
@@ -223,6 +256,9 @@
 <!-- js内容 -->
 <script>
 //获取class 名称。
+var yiangc=getClass("yiangc")[0];
+var foot=getClass("foot")[0];
+var shuli=getClass("shul_color")[0];
 	function getClass(cName){
 		var dom=document.getElementsByTagName("*");
 		var arr=[];
@@ -241,37 +277,37 @@ for(var i=0;i<xuanz.length;i++){
 				xuanz[i].childNodes[0].checked=this.childNodes[0].checked;
 			}
 		}
+		xiaoj();
 	}	
 }
-var shop=getClass("shop");
-var danj=getClass("danj");
-var shul=getClass("shul");
-var arr1=[],arr2=[];
-for(var i=0;i<danj.length;i++){
-	if(danj[i].className=="danj"){
-		arr1.push(parseFloat(danj[i].innerHTML));
+function xiaoj(){
+	var shop=getClass("shop");
+	var shuli=getClass("shul_color")[0];
+	var danC=getClass("dan_clor")[0];
+	var select=0,select1=0,list="";
+	for(var i=0;i<shop.length;i++){
+		if(shop[i].getElementsByTagName("input")[0].checked){
+			select +=parseInt(shop[i].getElementsByTagName("input")[1].value);
+			select1+=parseFloat(shop[i].getElementsByTagName("li")[4].innerHTML)*parseInt(shop[i].getElementsByTagName("input")[1].value);
+			src=shop[i].getElementsByTagName("img")[0].src;
+			list+= "<div id='img'><img src="+src+" alt=''><span>取消选择</span></div>"
+		}
 	}
-
-	if(danj[i].className=="danj clor"){
-			 arr2.push(parseFloat(danj[i].innerHTML));
+	shuli.innerHTML=select;
+	danC.innerHTML=select1.toFixed(2);
+	foot.innerHTML=list;
+}
+foot.onclick=function(){
 	
 }
-// parseFloat(danj[i].innerHTML)*parseFloat(danj[i].innerHTML)
-}
-var arr2Value;
-var heji=getClass("heji");
-for(var i=0;i<arr2.length;i++){
-	alert(typeof parseFloat(arr2[i]) );
-}
-
-alert(heji[0].innerHTML="合计：￥<span class='clor'>"+arr2Value+"</span>" )
-function xiaoj(){
-
-}
-var shop=getClass("shop");
-for(var i=0;i<shop.length;i++){
-	shop[i].nodeName()
+yiangc.onclick=function(){
+	if(shuli.innerHTML!=0){
+		foot.style.display="block"
+	}else{
+		foot.style.display="none"
+	}
 }
 </script>
 </body>
 </html>
+
